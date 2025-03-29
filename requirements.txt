@@ -1,0 +1,6 @@
+openai-whisper
+python-docx
+librosa
+soundfile
+scipy
+numpy

@@ -12,7 +12,7 @@ CACHE_DIR = "transcription_cache"
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 # Load the Whisper model (no device argument, so it will auto-detect)
-model = whisper.load_model("tiny.pt")  # Use the default device (CPU or GPU)
+model = whisper.load_model("base")  # Use the default device (CPU or GPU)
 
 def format_time(seconds):
     mins, secs = divmod(int(seconds), 60)

@@ -9,7 +9,7 @@ CACHE_DIR = "transcription_cache"
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 # 加载模型
-model = whisper.load_model("small")
+model = whisper.load_model("tiny")
 
 def format_time(seconds):
     mins, secs = divmod(int(seconds), 60)

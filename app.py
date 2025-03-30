@@ -133,7 +133,6 @@ if uploaded_file:
 # History records
 st.sidebar.subheader("历史记录")
 dirs = os.listdir(CACHE_DIR)
-dirs.remove('.DS_Store')
 history_tasks = sorted(dirs, key=lambda x: int(x))
 for task in history_tasks:
     task_dir = os.path.join(CACHE_DIR, task)
